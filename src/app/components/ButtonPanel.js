@@ -1,12 +1,17 @@
 import { Component } from "react";
+import {PropTypes} from "prop-types";
+
 import Button from "./Button";
 
 
 export default class ButtonPanel extends Component {
+  static propTypes = {
+    clickHandler: PropTypes.func,
+  };
 
   handleClick = buttonName => {
     this.props.clickHandler(buttonName);
-  }
+  };
 
   render(){
     return (
