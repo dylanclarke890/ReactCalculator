@@ -2,6 +2,10 @@ import { Component } from "react";
 import './Button.css';
 
 class Button extends Component {
+
+  handleClick = () => {
+    this.props.clickHandler(this.props.name);
+  }
   render(){
     const classNames = [
       "component-btn",
@@ -11,7 +15,7 @@ class Button extends Component {
 
     return (
       <div className={classNames.join(" ").trim()}>
-        <button>{this.props.name}</button>
+        <button onClick={this.handleClick}>{this.props.name}</button>
       </div>
     );
   }
