@@ -2,27 +2,30 @@ import React from 'react';
 import { Component } from 'react';
 
 import InputDisplay from './InputDisplay';
+import ButtonPanel from './ButtonPanel';
 import './Calculator.css';
-import ButtonPanelDisplay from './ButtonPanel';
+import calculate from '../logic/calculate';
 
 export default class Calculator extends Component {
 
   constructor(){
     super();
     this.state = {
-      value: "0"
+      total: null,
+      next: null,
+      operation: null,
     };
   }
 
   handleClick = buttonName => {
-    console.log(buttonName);
-  }
+    this.setState(calculate(this.state, buttonName));
+  };
 
   render(){
     return (
       <div className="component-calculator-app">
-        <InputDisplay value={this.state.value} />
-        <ButtonPanelDisplay clickHandler={this.handleClick}/>
+        <InputDisplay value={this.state.next || this.state.total || "0"} />
+        <ButtonPanel clickHandler={this.handleClick}/>
       </div>
     );
   }

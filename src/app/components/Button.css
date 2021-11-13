@@ -4,13 +4,6 @@
   flex: 1 0 auto;
   color: white;
 }
-
-.component-btn {
-  display: inline-flex;
-  width: 25%;
-  flex: 1 0 auto;
-}
-
 .component-btn.wide {
   width: 50%;
 }
