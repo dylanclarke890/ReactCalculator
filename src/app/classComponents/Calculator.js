@@ -2,7 +2,7 @@ import React, { Component} from 'react';
 
 import InputDisplay from './InputDisplay';
 import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/calculate';
+import calculate from '../logic/class/calculate';
 import '../componentCSS/Calculator.css';
 
 export default class Calculator extends Component {
@@ -17,7 +17,10 @@ export default class Calculator extends Component {
   }
 
   handleClick = buttonName => {
+    console.log(this.state);
+    console.log(buttonName);
     this.setState(calculate(this.state, buttonName));
+    console.log(this.state);
   };
 
   render(){

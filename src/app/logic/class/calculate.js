@@ -1,7 +1,7 @@
 import Big from "big.js";
 
-import operate from "./operate";
-import isNumber from "./isNumber";
+import operate from "../shared/operate";
+import isNumber from "../shared/isNumber";
 
 /**
  * Given a button name and a calculator data object, return an updated
