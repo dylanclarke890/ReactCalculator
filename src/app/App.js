@@ -1,10 +1,10 @@
 import React from 'react';
-import CalculatorDisplay from './components/CalculatorDisplay';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
     <div className="App">
-      <CalculatorDisplay />
+      <Calculator />
     </div>
   );
 }
