@@ -2,7 +2,7 @@ import { Component } from "react";
 import Button from "./Button";
 
 
-class ButtonPanel extends Component {
+export default class ButtonPanel extends Component {
 
   handleClick = buttonName => {
     this.props.clickHandler(buttonName);
@@ -44,5 +44,3 @@ class ButtonPanel extends Component {
     );
   }
 }
-
-export default ButtonPanel;

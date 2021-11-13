@@ -4,7 +4,7 @@ import InputDisplay from './InputDisplay';
 import './Calculator.css';
 import ButtonPanelDisplay from './ButtonPanel';
 
-class Calculator extends Component {
+export default class Calculator extends Component {
 
   constructor(){
     super();
@@ -27,5 +27,3 @@ class Calculator extends Component {
   }
 
 }
-
-export default Calculator;
