@@ -1,10 +1,9 @@
-import React from 'react';
-import { Component } from 'react';
+import React, { Component} from 'react';
 
 import InputDisplay from './InputDisplay';
 import ButtonPanel from './ButtonPanel';
-import './Calculator.css';
 import calculate from '../logic/calculate';
+import '../componentCSS/Calculator.css';
 
 export default class Calculator extends Component {
 

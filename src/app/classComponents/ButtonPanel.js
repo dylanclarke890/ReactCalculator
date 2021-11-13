@@ -2,7 +2,7 @@ import { Component } from "react";
 import {PropTypes} from "prop-types";
 
 import Button from "./Button";
-import './ButtonPanel.css';
+import '../componentCSS/ButtonPanel.css';
 
 export default class ButtonPanel extends Component {
   static propTypes = {
