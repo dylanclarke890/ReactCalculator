@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 
 import InputDisplay from './InputDisplay';
 import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/function/calculate';
-import '../componentCSS/Calculator.css';
+import calculate from '../../logic/function/calculate';
+import '../../theme/Calculator.css';
 
 export default function Calculator() {
 
@@ -26,4 +26,4 @@ export default function Calculator() {
       <ButtonPanel clickHandler={handleClick}/>
     </div>
     );
-}
+};
