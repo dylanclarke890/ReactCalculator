@@ -1,10 +1,12 @@
 import React from 'react';
-import Calculator from './classComponents/Calculator';
+import CalculatorClass from './classComponents/Calculator';
+import CalculatorFunc from './functionalComponents/Calculator';
 
 export default function App() {
   return (
     <div className="App">
-      <Calculator />
+      <CalculatorClass />
+      <CalculatorFunc />
     </div>
   );
 }
