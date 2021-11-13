@@ -12,6 +12,8 @@ import isNumber from "../shared/isNumber";
  *   next:String       the next number to be operated on with the total
  *   operation:String  +, -, etc.
  */
+
+// using calculate in setState merges returned object with current state.
 export default function calculate(obj, buttonName) {
   if (buttonName === "AC") { //user pressed clear
     return {

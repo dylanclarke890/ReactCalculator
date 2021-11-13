@@ -12,6 +12,8 @@ import isNumber from "../shared/isNumber";
  *   next:String       the next number to be operated on with the total
  *   operation:String  +, -, etc.
  */
+
+// using calculate in hooks replaces value with returned object.
 export default function calculate(obj, buttonName) {
   if (buttonName === "AC") { //user pressed clear
     return {

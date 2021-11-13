@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 
 import InputDisplay from './InputDisplay';
 import ButtonPanel from './ButtonPanel';
-import calculate from '../logic/class/calculate';
+import calculate from '../logic/function/calculate';
 import '../componentCSS/Calculator.css';
 
 export default function Calculator() {
