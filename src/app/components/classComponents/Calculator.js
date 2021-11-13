@@ -1,5 +1,6 @@
 import React, { Component} from 'react';
 
+import Header from '../shared/Header';
 import InputDisplay from './InputDisplay';
 import ButtonPanel from './ButtonPanel';
 import calculate from '../../logic/class/calculate';
@@ -17,15 +18,13 @@ export default class Calculator extends Component {
   }
 
   handleClick = buttonName => {
-    console.log(this.state);
-    console.log(buttonName);
     this.setState(calculate(this.state, buttonName));
-    console.log(this.state);
   };
 
   render(){
     return (
       <div className="component-calculator-app">
+        <Header message="Class Calculator" />
         <InputDisplay value={this.state.next || this.state.total || "0"} />
         <ButtonPanel clickHandler={this.handleClick}/>
       </div>

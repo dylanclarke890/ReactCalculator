@@ -1,9 +1,11 @@
 import React, {useState} from 'react';
 
+import Header from '../shared/Header';
 import InputDisplay from './InputDisplay';
 import ButtonPanel from './ButtonPanel';
-import calculate from '../../logic/function/calculate';
+
 import '../../theme/Calculator.css';
+import calculate from '../../logic/function/calculate';
 
 export default function Calculator() {
 
@@ -14,14 +16,12 @@ export default function Calculator() {
   });
 
   let handleClick = (buttonName) => {
-    console.log(state);
-    console.log(buttonName);
     setState(calculate(state, buttonName));
-    console.log(state);
   };
 
   return (
     <div className="component-calculator-app">
+      <Header message="Functional Calculator" />
       <InputDisplay value={state.next || state.total || "0"} />
       <ButtonPanel clickHandler={handleClick}/>
     </div>
